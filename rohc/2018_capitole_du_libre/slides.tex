@@ -144,6 +144,18 @@
 \end{frame}
 
 \begin{frame}
+	\frametitle{Main principles: analogy with video compression}
+	\begin{block}{ROHC compression is similar to video compression}
+		\begin{itemize}
+			\item transmit keyframes with full content regularly
+			\item transmit only deltas between 2 keyframes
+		\end{itemize}
+		\includegraphics[width=110mm]{images/I_P_and_B_frames.png} \\
+		{\tiny source wikipedia, public domain, by Petteri Aimonen}
+	\end{block}
+\end{frame}
+
+\begin{frame}
 	\frametitle{Main principles: information redundancy}
 	\begin{block}{redundancy inside one single network packet}
 		avoid transmitting well-known or inferred fields
@@ -154,7 +166,7 @@
 \begin{frame}
 	\frametitle{Main principles: information redundancy}
 	\begin{block}{redundancy between several network packets of one stream}
-		transmit static fields a few times
+		transmit static fields only a few times
 		\includegraphics[width=110mm]{images/rohc_redundancy_one_flow.png}
 	\end{block}
 \end{frame}
