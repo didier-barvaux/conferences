@@ -7,7 +7,6 @@ images_generated = \
 	images/rohc_redundancy_one_packet.png \
 	images/rohc_redundancy_one_flow.png \
 	images/rohc_classification.png \
-	images/rohc_lsb.png \
 	images/rohc_wlsb.png
 
 all: slides.pdf print.pdf
@@ -33,9 +32,6 @@ images/rohc_redundancy_one_flow.png: images/rohc_redundancy_one_flow.txt
 	$(ditaa) $<
 
 images/rohc_classification.png: images/rohc_classification.txt
-	$(ditaa) $< 
-
-images/rohc_lsb.png: images/rohc_lsb.txt
 	$(ditaa) $< 
 
 images/rohc_wlsb.png: images/rohc_wlsb.txt
